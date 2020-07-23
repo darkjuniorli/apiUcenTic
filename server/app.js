@@ -134,7 +134,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options))
 app.use(cors());
 const routes = require('./routes/index.route');
 
-app.get('/', (req, res) => res.send('<br><h1>Api TCI UCEN</h1> <h4>Jorge Guevara</h4><h4>Fabrizzio Basso</h4><h3>Muestra un listado de los carros y las caracteristicas de cada uno, mediante los siguientes url: </h3><br>Muestra el listado de los carros:<h4>https://localhost:8081/cars/</h4> Si se coloca un numero adicional al parametro de la url mostrara el numero del carro, ejemplo: <h4>https://localhost:8081/cars/1 </h4>'));
+app.get('/', (req, res) => res.send('<br><h1>Api TCI UCEN</h1> <h4>Jorge Guevara</h4><h4>Fabrizzio Basso</h4>Uso npm install , luego npm start.<h3>Muestra un listado de los carros y las caracteristicas de cada uno, mediante los siguientes url: </h3>Muestra el listado de los carros:<h4>https://localhost:8081/cars/</h4> Si se coloca un numero adicional al parametro de la url mostrara el numero del carro, ejemplo: <h4>https://localhost:8081/cars/1 </h4>'));
 app.get('/health', (req, res) => {
   const healthcheck = {
 		uptime: process.uptime(),
